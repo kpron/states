@@ -9,5 +9,9 @@ SERVICES = [
 
 def http_check(url):
     req = request('GET', url)
-    return "%s - %s" % (req.status_code, req.elapsed.total_seconds())
+    if req.status_code == 200:
+        status = 'OK'
+    else:
+        status = 'FAIL'
+    return "%s (%s)" % (status, req.elapsed.total_seconds())
 

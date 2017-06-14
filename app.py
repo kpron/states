@@ -8,11 +8,11 @@ app = Flask(__name__)
 @app.route("/")
 def states():
     page = '<html><body>'
+    page += '<center>'
     for service in SERVICES:
-        page += '<center>'
         page += '<h2>%s</h2>' % service
         page += '<p>%s</p>' % http_check(service)
-        page += '</center>'
+    page += '</center>'
     page += '</body></html>'
     return page
 
