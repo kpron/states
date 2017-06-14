@@ -1,11 +1,12 @@
 from requests import request
 
 SERVICES = [
+    'https://travis-ci.org',
+    'https://github.com/',
+    'https://hub.docker.com',
     'https://google.com',
     'https://ya.ru',
-    'https://travis-ci.org',
-    'https://telegram.org',
-    'http://mocks.lol'
+    'https://telegram.org'
 ]
 
 
