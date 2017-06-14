@@ -5,6 +5,8 @@ services:
 
 language: python
 
+install: "pip install -r packages"
+
 script:
   - python -m pytest -v
 
