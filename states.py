@@ -3,7 +3,9 @@ from requests import request
 SERVICES = [
     'https://google.com',
     'https://ya.ru',
-    'https://travis-ci.org'
+    'https://travis-ci.org',
+    'https://telegram.org',
+    'http://mocks.lol'
 ]
 
 
